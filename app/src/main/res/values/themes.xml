@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MiWeather" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue_5e</item>
+        <item name="colorPrimaryDark">@color/blue_c7</item>
+        <item name="colorAccent">@color/blue_8a</item>
+    </style>
+
+    <style name="Theme.MiWeather" parent="Base.Theme.MiWeather" />
+
+    <style name="LabelStyle" parent="TextAppearance.MaterialComponents.Body1"/>
+
+    <style name="DefaultTextStyle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
