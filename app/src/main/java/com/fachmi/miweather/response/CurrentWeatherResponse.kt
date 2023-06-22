@@ -3,19 +3,20 @@ package com.fachmi.miweather.response
 import com.google.gson.annotations.SerializedName
 
 data class CurrentWeatherResponse(
-    @field:SerializedName("visibility") val visibility: Int = 0,
-    @field:SerializedName("timezone") val timezone: Int = 0,
-    @field:SerializedName("main") val main: Main = Main(),
-    @field:SerializedName("clouds") val clouds: Clouds = Clouds(),
-    @field:SerializedName("sys") val sys: Sys = Sys(),
-    @field:SerializedName("dt") val dt: Int = 0,
-    @field:SerializedName("coord") val coord: Coord = Coord(),
-    @field:SerializedName("weather") val weather: List<WeatherItem> = listOf(),
-    @field:SerializedName("name") val name: String = "",
-    @field:SerializedName("cod") val cod: Int = 0,
-    @field:SerializedName("id") val id: Int = 0,
-    @field:SerializedName("base") val base: String = "",
-    @field:SerializedName("wind") val wind: Wind = Wind()
+    @field:SerializedName("visibility") val visibility: Int? = 0,
+    @field:SerializedName("timezone") val timezone: Int? = 0,
+    @field:SerializedName("main") val main: Main? = Main(),
+    @field:SerializedName("clouds") val clouds: Clouds? = Clouds(),
+    @field:SerializedName("sys") val sys: Sys? = Sys(),
+    @field:SerializedName("dt") val dt: Int? = 0,
+    @field:SerializedName("coord") val coord: Coord? = Coord(),
+    @field:SerializedName("weather") val weather: List<WeatherItem>? = listOf(),
+    @field:SerializedName("name") val name: String? = "",
+    @field:SerializedName("cod") val cod: Int? = 0,
+    @field:SerializedName("id") val id: Int? = 0,
+    @field:SerializedName("base") val base: String? = "",
+    @field:SerializedName("wind") val wind: Wind? = Wind(),
+    @field:SerializedName("message") val msg: String? = ""
 )
 
 data class Sys(

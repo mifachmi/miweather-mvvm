@@ -18,7 +18,7 @@ object ApiConfig {
     private fun provideHttpInterceptor(context: Context): Interceptor {
         return Interceptor { chain ->
             val url = chain.request().url.newBuilder()
-                .addQueryParameter("app_key", BuildConfig.API_KEY)
+                .addQueryParameter("appid", BuildConfig.API_KEY)
                 .build()
 
             val request = chain.request().newBuilder()

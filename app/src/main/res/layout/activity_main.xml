@@ -70,7 +70,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layout_item_additional_info_two" />
 
-            <androidx.recyclerview.widget.RecyclerView
+            <include
+                android:id="@+id/layout_item_other_location"
+                layout="@layout/layout_other_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_other_location" />
+
+            <!--<androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_other_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +91,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_title_other_location"
                 tools:itemCount="6"
-                tools:listitem="@layout/item_other_location" />
+                tools:listitem="@layout/item_other_location" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
